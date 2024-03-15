@@ -279,9 +279,9 @@ RUN git clone https://github.com/ultravideo/kvazaar.git && \
     sudo ldconfig
 
 # Build ffmpeg
-RUN wget -O ffmpeg-snapshot.tar.bz2 https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && \
-    tar xjvf ffmpeg-snapshot.tar.bz2 && \
-    cd ffmpeg && \
+RUN wget -O ffmpeg-6.1.1.tar.bz2 https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.bz2 && \
+    tar xjvf ffmpeg-6.1.1.tar.bz2 && \
+    cd ffmpeg-6.1.1 && \
     PATH="/usr/bin:$PATH" PKG_CONFIG_PATH="/opt/ffmpeg/build/lib/pkgconfig" ./configure \
     --prefix="/opt/ffmpeg/build" \
     --pkg-config-flags="--static" \
@@ -374,7 +374,7 @@ RUN wget -O ffmpeg-snapshot.tar.bz2 https://ffmpeg.org/releases/ffmpeg-snapshot.
 
 # Install latest NodeJS
 RUN apt install gnupg2 -y
-RUN curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash -
 RUN apt install nodejs -y
 
 WORKDIR /opt/shinobi

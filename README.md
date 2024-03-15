@@ -18,7 +18,7 @@ Build time depends on system, but it can be between 30 minutes to even 1 hour.
 
 >  `docker` with `compose` plugin should already be installed.
 
-1. Clone the Repo and enter the `docker-shinobi` directory.
+1. Clone the Repo and enter the `ShinobiNvidiaDocker` directory.
     ```
     git clone https://github.com/energypatrikhu/Shinobi.git ShinobiNvidiaDocker && cd ShinobiNvidiaDocker
     ```

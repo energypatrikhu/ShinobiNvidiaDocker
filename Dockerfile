@@ -395,6 +395,7 @@ RUN chmod -f +x ./*.sh
 # Copy default configuration files
 COPY ./config/conf.sample.json /opt/shinobi/conf.sample.json
 COPY ./config/super.sample.json /opt/shinobi/super.sample.json
+COPY ./config/motion.sample.json /opt/shinobi/motion.sample.json
 
 VOLUME ["/config"]
 VOLUME ["/opt/shinobi/libs/customAutoLoad"]

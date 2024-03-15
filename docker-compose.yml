@@ -1,0 +1,25 @@
+version: '2'
+services:
+  shinobi:
+    container_name: 'Shinobi'
+    build: .
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/libcuda.so.1
+      - /dev/shm/Shinobi/streams:/dev/shm/streams
+      - ./config:/config
+      - ./customAutoLoad:/opt/shinobi/libs/customAutoLoad
+      - ./database:/var/lib/mysql
+      - ./videos:/opt/shinobi/videos
+      - ./plugins:/opt/shinobi/plugins
+    ports:
+      - "8080:8080"
+    devices:
+      - /dev/nvidia0:/dev/nvidia0
+      - /dev/nvidiactl:/dev/nvidiactl
+      - /dev/nvidia-modeset:/dev/nvidia-modeset
+      - /dev/nvidia-uvm:/dev/nvidia-uvm
+      - /dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools
+      - /dev/nvram:/dev/nvram
+      - /dev/nvidia-caps:/dev/nvidia-caps

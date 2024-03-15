@@ -3,13 +3,13 @@
 Nvidia Enabled Docker Image for Shinobi CCTV. Based on https://gitlab.com/Shinobi-Systems/Shinobi
 
 ### (!!!) Versions:
-nvidia driver version: 470
-cuda driver version: 470
-cuda version: 11.4
-cudnn version: 9
-nv-headers version: 11.1.5.3
-ffmpeg version: latest snapshot
-nodejs version: latest current
+- nvidia driver version: 470
+- cuda driver version: 470
+- cuda version: 11.4
+- cudnn version: 9
+- nv-headers version: 11.1.5.3
+- ffmpeg version: latest snapshot
+- nodejs version: latest current
 
 ### Building
 Build time depends on system, but it can be between 30 minutes to even 1 hour.

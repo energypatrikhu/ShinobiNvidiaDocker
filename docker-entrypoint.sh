@@ -20,7 +20,7 @@ fi
 
 if [ ! -f /opt/shinobi/plugins/motion/conf.json ]; then
     echo "Create default config file /opt/shinobi/plugins/motion/conf.json ..."
-    cp /opt/shinobi/motion.sample.json /opt/shinobi/plugins/motion/conf.json
+    cp /opt/shinobi/motion.conf.sample.json /opt/shinobi/plugins/motion/conf.json
 fi
 
 # Hash the admins password

@@ -6,11 +6,10 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
-      - /usr/lib/x86_64-linux-gnu/libcuda.so.1:/usr/lib/libcuda.so.1
       - /dev/shm/Shinobi/streams:/dev/shm/streams
       - ./config:/config
-      - ./customAutoLoad:/opt/shinobi/libs/customAutoLoad
       - ./database:/var/lib/mysql
+      - ./customAutoLoad:/opt/shinobi/libs/customAutoLoad
       - ./videos:/opt/shinobi/videos
       - ./plugins:/opt/shinobi/plugins
     ports:

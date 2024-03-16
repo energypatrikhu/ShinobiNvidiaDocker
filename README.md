@@ -21,7 +21,7 @@ Original repo: https://gitlab.com/Shinobi-Systems/ShinobiNvidiaDocker
 
 2. Clone the Repo and enter the `ShinobiNvidiaDocker` directory.
     ```
-    git clone https://github.com/energypatrikhu/Shinobi.git ShinobiNvidiaDocker && cd ShinobiNvidiaDocker
+    git clone https://github.com/energypatrikhu/ShinobiNvidiaDocker.git ShinobiNvidiaDocker && cd ShinobiNvidiaDocker
     ```
 
 3. Spark one up.

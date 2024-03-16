@@ -5,6 +5,7 @@ Nvidia Enabled Docker Image for Shinobi CCTV. Based on https://gitlab.com/Shinob
 Original repo: https://gitlab.com/Shinobi-Systems/ShinobiNvidiaDocker
 
 ### (!!!) Versions:
+- docker image: nvidia/cuda:11.3.1-cudnn8-runtime-ubuntu20.04
 - nvidia driver version: 470
 - cuda version: 11
 - cudnn version: 8
@@ -16,7 +17,7 @@ Original repo: https://gitlab.com/Shinobi-Systems/ShinobiNvidiaDocker
 >  `docker` with `compose` plugin should already be installed.
 
 1. Setup NVIDIA Container Toolkit
-https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+    - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
 2. Clone the Repo and enter the `ShinobiNvidiaDocker` directory.
     ```

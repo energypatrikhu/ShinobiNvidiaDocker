@@ -3,6 +3,7 @@ services:
   shinobi:
     container_name: 'Shinobi'
     build: .
+    runtime: nvidia
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
